@@ -1,0 +1,457 @@
+{
+  "problem": {
+    "problem_type": "harmonic",
+    "flights": [
+      {
+        "flight_id": "F001",
+        "scheduled_time": "2024-03-20T15:00:00Z"
+      },
+      {
+        "flight_id": "F002",
+        "scheduled_time": "2024-03-20T16:00:00Z"
+      },
+      {
+        "flight_id": "F003",
+        "scheduled_time": "2024-03-20T17:00:00Z"
+      },
+      {
+        "flight_id": "F004",
+        "scheduled_time": "2024-03-20T18:00:00Z"
+      },
+      {
+        "flight_id": "F005",
+        "scheduled_time": "2024-03-20T19:00:00Z"
+      },
+      {
+        "flight_id": "F006",
+        "scheduled_time": "2024-03-20T19:00:00Z"
+      },
+      {
+        "flight_id": "F007",
+        "scheduled_time": "2024-03-20T19:00:00Z"
+      }
+    ],
+    "initial_flight_list": {
+      "target_time_assignments": [
+        {
+          "target_time_id": "T001",
+          "flight_id": "F001"
+        },
+        {
+          "target_time_id": "T002",
+          "flight_id": "F002"
+        },
+        {
+          "target_time_id": "T003",
+          "flight_id": "F003"
+        },
+        {
+          "target_time_id": "T004",
+          "flight_id": "F004"
+        },
+        {
+          "target_time_id": "T005",
+          "flight_id": "F005"
+        }
+      ]
+    },
+    "target_times": [
+      {
+        "target_time_id": "T001",
+        "time": "2024-03-20T15:30:00Z"
+      },
+      {
+        "target_time_id": "T002",
+        "time": "2024-03-20T16:30:00Z"
+      },
+      {
+        "target_time_id": "T003",
+        "time": "2024-03-20T17:30:00Z"
+      },
+      {
+        "target_time_id": "T004",
+        "time": "2024-03-20T18:30:00Z"
+      },
+      {
+        "target_time_id": "T005",
+        "time": "2024-03-20T19:30:00Z"
+      }
+    ],
+    "objectives": [
+      {
+        "objective_id": "airspace_user_preferences",
+        "flight_preferences": [
+          {
+            "flight_id": "F001",
+            "target_time_preferences": [
+              {
+                "weight": 5,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F002",
+            "target_time_preferences": [
+              {
+                "weight": 2,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 90,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 2,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 2,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 0,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F003",
+            "target_time_preferences": [
+              {
+                "weight": 30,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 100,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 2,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 3,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F004",
+            "target_time_preferences": [
+              {
+                "weight": 10,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 5,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 2,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 60,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 0,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F005",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": 8
+              },
+              {
+                "target_time_id": "T002",
+                "weight": 2
+              },
+              {
+                "target_time_id": "T003",
+                "weight": 10
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          },
+          {
+            "flight_id": "F006",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": 1000
+              },
+              {
+                "target_time_id": "T002",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T003",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 40
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          },
+          {
+            "flight_id": "F007",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T002",
+                "weight": 10000
+              },
+              {
+                "target_time_id": "T003",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 40
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "objective_id": "airport_preferences",
+        "flight_preferences": [
+          {
+            "flight_id": "F001",
+            "target_time_preferences": [
+              {
+                "weight": 40,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 60,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F002",
+            "target_time_preferences": [
+              {
+                "weight": 0,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 8,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 20,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 2,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F003",
+            "target_time_preferences": [
+              {
+                "weight": 0,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 0,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 80,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 0,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 3,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F004",
+            "target_time_preferences": [
+              {
+                "weight": 10,
+                "target_time_id": "T001"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T002"
+              },
+              {
+                "weight": 10,
+                "target_time_id": "T003"
+              },
+              {
+                "weight": 20,
+                "target_time_id": "T004"
+              },
+              {
+                "weight": 0,
+                "target_time_id": "T005"
+              }
+            ]
+          },
+          {
+            "flight_id": "F005",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": -1000
+              },
+              {
+                "target_time_id": "T002",
+                "weight": -1000
+              },
+              {
+                "target_time_id": "T003",
+                "weight": -1000
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 40
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          },
+          {
+            "flight_id": "F006",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": 1000
+              },
+              {
+                "target_time_id": "T002",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T003",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 40
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          },
+          {
+            "flight_id": "F007",
+            "target_time_preferences": [
+              {
+                "target_time_id": "T001",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T002",
+                "weight": 10000
+              },
+              {
+                "target_time_id": "T003",
+                "weight": 0
+              },
+              {
+                "target_time_id": "T004",
+                "weight": 40
+              },
+              {
+                "target_time_id": "T005",
+                "weight": 80
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "framework": {
+    "framework_type": "pygad",
+    "num_generations": 100,
+    "num_parents_mating": 25,
+    "sol_per_pop": 150,
+    "parent_selection_type": "nsga2",
+    "crossover_type": "pmx",
+    "mutation_type": "shift1",
+    "mutation_percent_genes": 10,
+    "keep_elitism": 0,
+    "keep_parents": 0,
+    "save_solutions": false,
+    "save_best_solutions": false
+  }
+}

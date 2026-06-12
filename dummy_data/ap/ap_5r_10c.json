@@ -1,0 +1,152 @@
+{
+  "problem": {
+    "problem_type": "ap",
+    "objectives": [
+    {
+      "objective_id": "1",
+      "weights": [
+        [
+          37,
+          12,
+          72,
+          9,
+          75,
+          5,
+          79,
+          64,
+          16,
+          1
+        ],
+        [
+          76,
+          71,
+          6,
+          25,
+          50,
+          20,
+          18,
+          84,
+          11,
+          28
+        ],
+        [
+          29,
+          14,
+          50,
+          68,
+          87,
+          87,
+          94,
+          96,
+          86,
+          13
+        ],
+        [
+          9,
+          7,
+          63,
+          61,
+          22,
+          57,
+          1,
+          0,
+          60,
+          81
+        ],
+        [
+          8,
+          88,
+          13,
+          47,
+          72,
+          30,
+          71,
+          3,
+          70,
+          21
+        ]
+      ]
+    },
+    {
+      "objective_id": "2",
+      "weights": [
+        [
+          49,
+          57,
+          3,
+          68,
+          24,
+          43,
+          76,
+          26,
+          52,
+          80
+        ],
+        [
+          41,
+          82,
+          15,
+          64,
+          68,
+          25,
+          98,
+          87,
+          7,
+          26
+        ],
+        [
+          25,
+          22,
+          9,
+          67,
+          23,
+          100,
+          27,
+          37,
+          57,
+          83
+        ],
+        [
+          38,
+          8,
+          32,
+          34,
+          10,
+          23,
+          15,
+          87,
+          25,
+          71
+        ],
+        [
+          92,
+          74,
+          62,
+          46,
+          32,
+          88,
+          23,
+          55,
+          65,
+          77
+        ]
+      ]
+    }
+  ]
+  },
+  "framework": {
+    "framework_type": "pygad",
+    "num_generations": 100,
+    "num_parents_mating": 150,
+    "sol_per_pop": 300,
+    "parent_selection_type": "nsga2_modified",
+    "crossover_type": "pmx",
+    "mutation_type": "shift1",
+    "mutation_percent_genes": 10,
+    "keep_elitism": 0,
+    "keep_parents": 5,
+    "save_solutions": false,
+    "save_best_solutions": false,
+    "random_seed": 69
+  }
+}
