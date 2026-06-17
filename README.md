@@ -1,5 +1,6 @@
 # HARMONIC-Optimizer-Python
 
+[![DOI](https://zenodo.org/badge/1267159607.svg)](https://doi.org/10.5281/zenodo.20729053)
 
 ## Introduction
 This project contains the API for the HARMONIC-Optimizer-Python. <br>
